@@ -1,0 +1,6 @@
+image: ubuntu:22.04
+
+tasks:
+  - init: |
+      sudo apt update && sudo apt install -y htop tree vim
+    command: bash
