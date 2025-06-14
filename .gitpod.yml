@@ -3,4 +3,7 @@ image: ubuntu:22.04
 tasks:
   - init: |
       sudo apt update && sudo apt install -y htop tree vim
-    command: bash
+      chmod +x linux_lab.sh
+    command: |
+      ./linux_lab.sh
+      echo "✅ Linux Workshop Ready. Type ./linux_lab.sh to rerun the main script."
